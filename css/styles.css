@@ -201,6 +201,7 @@ nav{
 }
 .footer-socials{
     margin-left: 120px;
+    margin-right: 80px;
 }
 .footer-socials-title{
     font-family: 'Roboto';
@@ -211,14 +212,14 @@ nav{
     letter-spacing: 0.02em;
     color: var(--standard-white-color);
     margin-bottom: 16px;
-    }
+}
     .footer-social-link-list{
     list-style-type: none;
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
-    }
+}
     .footer-social-link{
     display: flex;
     height: 40px;
@@ -229,9 +230,53 @@ nav{
     background-color: rgba(255, 255, 255, 0.1);;    
     text-decoration: none;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
-    }
-    
- /*-------------index.html styles-------------*/
+}
+    /* footer form styles */
+    .footer-form-content{
+        display: block;
+}
+    .footer-form-title{
+        font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--standard-white-color);
+    padding-bottom: 16px;
+}
+    .input-and-button{
+        display: inline;
+}
+    .label-exception{
+        margin: 0px;
+}
+.footer-input{
+    background-color: transparent;
+    width: 264px;
+    height: 40px;
+    outline: none;
+    border:  1px solid rgba(255, 255, 255, 0.3);;
+}
+.footer-button{
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    background-color: var(--active-color);
+    border: none;
+    border-radius: 4px;
+    margin-left: 24px;
+
+    color: var(--standard-white-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+}
+ /*------------index.html styles-------------*/
 /*banner*/
 .banner{
     background: var(--title-text-color);
