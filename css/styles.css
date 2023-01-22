@@ -213,14 +213,14 @@ nav{
     color: var(--standard-white-color);
     margin-bottom: 16px;
 }
-    .footer-social-link-list{
+.footer-social-link-list{
     list-style-type: none;
     display: flex;
     gap: 24px;
     justify-content: center;
     align-items: center;
 }
-    .footer-social-link{
+.footer-social-link{
     display: flex;
     height: 40px;
     width: 40px;
@@ -232,24 +232,27 @@ nav{
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
     /* footer form styles */
-    .footer-form-content{
-        display: block;
+.footer-form-content{
+    display: block;
 }
-    .footer-form-title{
-        font-family: 'Roboto';
+
+.footer-form-title{
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--standard-white-color);
-    padding-bottom: 16px;
+    margin-bottom: 16px;
 }
-    .input-and-button{
-        display: inline;
+.input-and-button{
+    display: flex;
+    width: 453px;
+    gap: 24px;
 }
-    .label-exception{
-        margin: 0px;
+.label-exception{
+    margin: 0px;
 }
 .footer-input{
     background-color: transparent;
@@ -257,18 +260,30 @@ nav{
     height: 40px;
     outline: none;
     border:  1px solid rgba(255, 255, 255, 0.3);
-    color: var(--standard-white-color);
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
+.footer-input::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+
+    }
 .footer-button{
-    justify-content: center;
+    display: inline-flex;
+    min-width: 165px;
     align-items: center;
     padding: 8px 24px;
     background-color: var(--active-color);
     border: none;
     border-radius: 4px;
-    margin-left: 24px;
-
     color: var(--standard-white-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -278,6 +293,14 @@ nav{
     letter-spacing: 0.04em;
     cursor: pointer;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
+}
+.send-icon{
+    display: inline-block;
+    margin-left: 16px;
+    width: 24px;
+    height: 24px;
+    fill: white;
+    margin-top: 1px;
 }
 .footer-input:hover, .footer-input:focus, .footer-input:active{
     border: 1px solid var(--active-color);
@@ -423,11 +446,25 @@ nav{
 .modal-field{
     margin-bottom: 8px;
     margin-left: 24px;
-    margin-right: 24px;
-}
- label{
-  
    
+}
+.modal-checkbox-field{
+    margin-left: 24px;
+   
+}
+.modal-textarea-field{
+    margin-left: 24px;
+   
+}
+label{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--subtle-dark-color);
+
 }
 .input{
     width: 360px;
@@ -445,15 +482,12 @@ nav{
 .textarea{
     margin-bottom: 16px;
     outline: none;
-    margin-left: 24px;
     border-radius: 4px;
     width: 360px;
     height: 120px;
     padding-left: 16px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
-
-
 .check-label{
     font-family: 'Roboto';
     font-style: normal;
