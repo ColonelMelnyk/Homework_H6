@@ -420,21 +420,24 @@ nav{
     color: var(--title-text-color);
     margin-bottom: 16px;
 }
- label{
+.modal-field{
+    margin-bottom: 8px;
     margin-left: 24px;
-    width: 360px;
-    height: 40px;
+    margin-right: 24px;
+}
+ label{
+  
+   
 }
 .input{
     width: 360px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 8px;
+    
     outline: none;
     background-color: transparent;
-    margin-left: 24px;
-    margin-right: 24px;
+   
     padding-left: 38px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }

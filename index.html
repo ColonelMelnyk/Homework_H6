@@ -50,26 +50,35 @@
                         <button data-modal-close class="modal-button"><svg width="8" height="8" class="modal-svg"><use href="./images/sprite/vector.svg#vector"></use></svg></button>
                         <p class="form-title">Leave your contacts and we will call you back</p>
                         <form class="form">
-                                <label> Name
-                                <input type="text"  name="user-name" class="input" placeholder="" required>
-                                </label>
-                                <label> Phone
-                                <input type="tel"  name="user-phone" class="input"  placeholder="" required 
+                                <div class="modal-field">
+                                <label for="user-name">Name</label>
+                                <div class="input-field">
+                                <input type="text"  name="user-name" id="user-name" class="input" placeholder="" required>
+                                </div>
+                                </div>
+                                <div class="modal-field">
+                                <label for="user-phone">Phone</label>
+                                <div class="input-field">
+                                <input type="tel"  name="user-phone" id="user-phone" class="input"  placeholder="" required 
                                 pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}">
-                                </label>
-                                <label> Mail
-                                <input type="email"  name="user-mail" class="input" placeholder="" required>
-                                </label>
-                                <br/>
+                                </div>
+                                </div>
+                                <div class="modal-field">
+                                <label for="user-mail">Mail</label>
+                                <div class="input-field">
+                                <input type="email"  name="user-mail" id="user-mail" class="input" placeholder="" required>
+                                </div>
+                                </div>
+                                <div class="modal-textarea-field">
                                 <label for="field">Comment</label> 
-                                <br/>
-                                <textarea  id="field" name="user-textarea"  rows="5" class="textarea"></textarea>
-                                <br/>
+                                <textarea  id="field" name="field"  class="textarea"></textarea>
+                                </div>
+                                <div class="modal-checkbox-field">
                                 <label for="checkbox" class="check-label" >
                                     <input type="checkbox" id="checkbox"  required>
                                     I accept the terms and conditions of the <a href="./index.html">Privacy Policy</a>
                                 </label>
-                                <br/>  
+                                </div>
                                 <div class="test-align">
                                 <button type="submit" class="form-button">Send</button>
                                 </div>
