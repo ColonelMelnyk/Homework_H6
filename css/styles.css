@@ -410,9 +410,11 @@ nav{
     fill: var(--standard-white-color);
     transition: fill var(--animation-duration) var(--animation-timing-function);
 }
-.input:hover, .input:focus, input:active{
+.input:hover, .input:focus, input:active  {
     border: 1px solid var(--active-color);
-   
+}
+.input:hover + .input-icon, .input:focus + .input-icon, .input:active + .input-icon{
+    fill: var(--active-color);
 }
 .form-button:hover, .form-button:active, .form-button:focus{
     background-color: #404BBF ;
@@ -483,8 +485,8 @@ label{
     
     outline: none;
     background-color: transparent;
-   
-    padding-left: 38px;
+    padding: 0;
+    padding-left: 36px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 
@@ -496,6 +498,15 @@ label{
     height: 120px;
     padding-left: 16px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
+}
+.textarea::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.04em;
+    color: rgba(117, 117, 117, 0.5);
 }
 .check-label{
     font-family: 'Roboto';
