@@ -259,8 +259,9 @@ nav{
     width: 264px;
     height: 40px;
     border-radius: 4px;
+    outline: none;
     border:  1px solid rgba(255, 255, 255, 0.3);
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--standard-white-color);
     padding-left: 16px;
     transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
