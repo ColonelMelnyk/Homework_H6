@@ -534,7 +534,6 @@ label{
 }
 .checkbox{
     appearance: none;
-    transition: background-color var(--animation-duration) var(--animation-timing-function);
 }
 .checkbox-icon{
     display: inline-block;
